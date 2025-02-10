@@ -6,5 +6,4 @@ import lombok.Data;
 public class EntryPointDetectedEvent {
     private String symbol;
     private String strategyName;
-
 }

@@ -1,7 +1,6 @@
 package by.zemich.bargainms.domain.agreegate;
 
 import by.zemich.bargainms.domain.command.InitiateBargainCommand;
-import by.zemich.bargainms.domain.entity.Order;
 import by.zemich.bargainms.domain.event.BargainInitiatedEvent;
 import by.zemich.bargainms.domain.valueobject.BargainId;
 import by.zemich.bargainms.domain.valueobject.Pair;
@@ -24,7 +23,7 @@ public class Bargain {
     @AggregateIdentifier
     private BargainId id;
     private LocalDateTime initTime;
-    private List<Order> orders;
+    private List<OrderAggregate> orders;
     private Pair pair;
     private BargainStatus bargainStatus;
     private BigDecimal result;

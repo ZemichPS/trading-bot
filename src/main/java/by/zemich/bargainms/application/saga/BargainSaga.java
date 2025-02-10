@@ -20,7 +20,7 @@ import java.util.UUID;
 public class BargainSaga {
 
     private final CommandGateway commandGateway;
-    private final ExchangeService exchangeService;
+
 
     @StartSaga
     @SagaEventHandler(associationProperty = "symbol")
@@ -36,7 +36,7 @@ public class BargainSaga {
         commandGateway.send(command);
     }
 
-    @SagaEventHandler()
+    @SagaEventHandler(associationProperty = "symbol")
     public void on(){
 
     }
