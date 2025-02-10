@@ -6,7 +6,7 @@ import by.zemich.bargainms.application.projection.entity.BargainEntity;
 import by.zemich.bargainms.application.projection.entity.OrderEntity;
 import by.zemich.bargainms.domain.event.BargainInitiatedEvent;
 import by.zemich.bargainms.domain.event.OrderPlacedEvent;
-import by.zemich.bargainms.infrastructure.repository.BargainRepository;
+import by.zemich.bargainms.infrastructure.repository.jpa.BargainRepository;
 import lombok.AllArgsConstructor;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.stereotype.Component;

@@ -22,4 +22,9 @@ public class OrderSaga {
         AddOrderToBargainCommand commaned = AddOrderToBargainCommand.builder()
                 .build();
     }
+
+    @SagaEventHandler(associationProperty = "symbol")
+    public void on(){
+
+    }
 }

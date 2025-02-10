@@ -16,13 +16,12 @@ import java.util.UUID;
 @Setter
 public class OrderEntity {
     @Id
-    private UUID uuid;
+    private Long orderId;
     @ManyToOne(
             fetch = FetchType.LAZY,
             targetEntity = BargainEntity.class
     )
     private BargainEntity bargain;
-    private Long orderId;
     private String clientOrderId;
     private String symbol;
     private Long transactTime;
