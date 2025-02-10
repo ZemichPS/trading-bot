@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bargain-ms
+    group: by.zemich.trading-bot
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
