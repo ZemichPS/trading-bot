@@ -1,6 +1,6 @@
 package by.zemich.bargainms.application.factory;
 
-import by.zemich.bargainms.application.projection.entity.OrderEntity;
+import by.zemich.bargainms.infrastructure.repository.jpa.entity.OrderEntity;
 import by.zemich.bargainms.domain.event.OrderPlacedEvent;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +11,6 @@ public class OrderEntityFactory {
 
     public OrderEntity eventToOrderEntity(OrderPlacedEvent event) {
         return OrderEntity.builder()
-                .uuid(UUID.randomUUID())
                 .orderId(event.getOrderId())
                 .clientOrderId(event.getClientOrderId())
                 .price(event.getPrice())

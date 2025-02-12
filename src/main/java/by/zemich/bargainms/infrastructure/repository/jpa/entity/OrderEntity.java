@@ -1,11 +1,10 @@
-package by.zemich.bargainms.application.projection.entity;
+package by.zemich.bargainms.infrastructure.repository.jpa.entity;
 
 import by.zemich.bargainms.domain.valueobject.*;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 @Entity
 @Table(name = "orders")

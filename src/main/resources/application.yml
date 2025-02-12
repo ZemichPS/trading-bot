@@ -11,3 +11,14 @@ management:
   info:
     env:
       enabled: true
+
+binance:
+  API_KEY: ${API_KEY:key}
+  SECRET_KEY: ${SECRET_KEY:secret}
+
+strategies:
+  simple-spot-strategies:
+    enabled: true
+    trade-amount: 10
+    percentage-interest: 1.2
+

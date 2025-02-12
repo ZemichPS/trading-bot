@@ -1,25 +1,15 @@
-package by.zemich.bargainms.domain.event;
-
+package by.zemich.bargainms.application.dto;
 
 import by.zemich.bargainms.domain.valueobject.OrderSide;
 import by.zemich.bargainms.domain.valueobject.OrderStatus;
 import by.zemich.bargainms.domain.valueobject.OrderType;
 import by.zemich.bargainms.domain.valueobject.TimeInForce;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class OrderPlacedEvent {
-    private UUID bargainId;
-    private String symbol;
+public class BinanceOrderResponse {
     private Long orderId;
     private Long orderListId;
     private String clientOrderId;

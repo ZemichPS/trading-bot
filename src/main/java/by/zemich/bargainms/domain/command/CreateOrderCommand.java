@@ -1,23 +1,18 @@
-package by.zemich.bargainms.domain.event;
-
+package by.zemich.bargainms.domain.command;
 
 import by.zemich.bargainms.domain.valueobject.OrderSide;
 import by.zemich.bargainms.domain.valueobject.OrderStatus;
 import by.zemich.bargainms.domain.valueobject.OrderType;
 import by.zemich.bargainms.domain.valueobject.TimeInForce;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.UUID;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
-public class OrderPlacedEvent {
+public class CreateOrderCommand {
     private UUID bargainId;
     private String symbol;
     private Long orderId;

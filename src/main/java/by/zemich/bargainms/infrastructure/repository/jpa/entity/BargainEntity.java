@@ -1,4 +1,4 @@
-package by.zemich.bargainms.application.projection.entity;
+package by.zemich.bargainms.infrastructure.repository.jpa.entity;
 
 import by.zemich.bargainms.domain.valueobject.BargainStatus;
 import jakarta.persistence.*;

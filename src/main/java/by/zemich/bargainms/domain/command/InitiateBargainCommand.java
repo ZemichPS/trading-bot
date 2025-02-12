@@ -5,15 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.axonframework.modelling.command.AggregateIdentifier;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
 public class InitiateBargainCommand {
+    @AggregateIdentifier
     private UUID bargainId;
     private String strategyName;
     private String symbol;

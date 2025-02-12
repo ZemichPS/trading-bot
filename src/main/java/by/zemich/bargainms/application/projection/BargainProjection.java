@@ -2,8 +2,8 @@ package by.zemich.bargainms.application.projection;
 
 import by.zemich.bargainms.application.factory.BargainEntityFactory;
 import by.zemich.bargainms.application.factory.OrderEntityFactory;
-import by.zemich.bargainms.application.projection.entity.BargainEntity;
-import by.zemich.bargainms.application.projection.entity.OrderEntity;
+import by.zemich.bargainms.infrastructure.repository.jpa.entity.BargainEntity;
+import by.zemich.bargainms.infrastructure.repository.jpa.entity.OrderEntity;
 import by.zemich.bargainms.domain.event.BargainInitiatedEvent;
 import by.zemich.bargainms.domain.event.OrderPlacedEvent;
 import by.zemich.bargainms.infrastructure.repository.jpa.BargainRepository;
